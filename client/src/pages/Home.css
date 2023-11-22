@@ -1,0 +1,129 @@
+.home {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Dark gray for text */
+    background-color: #f8f8f8; /* Light background for better visibility */
+  }
+  
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #eaeaea; /* Light gray background for the header */
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  
+  .navbar a {
+    color: #333;
+    text-decoration: none;
+    margin-right: 1rem;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .navbar a:hover {
+    color: #6a0dad; /* Purple accent on hover */
+  }
+  
+  .promo-banner {
+    background-color: #9c27b0; /* Visible purple */
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .promo-banner:hover {
+    background-color: #7b1fa2; /* A darker shade of purple on hover */
+  }
+  
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px;
+    min-height: 80vh;
+  }
+  
+  .intro-text h1 {
+    font-size: 3rem;
+    color: #333;
+  }
+  
+  .intro-text h2 {
+    font-size: 2rem;
+    color: #555; /* Slightly lighter for contrast */
+  }
+  
+  .intro-text p {
+    margin-top: 1rem;
+    color: #666; /* Subtle gray */
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #9c27b0; /* Visible purple */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(106, 13, 173, 0.3);
+  }
+  
+  /* Parallax effect for hero image */
+  .hero-image {
+    /* background-image: url('');   */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40vw; /* Responsive width */
+    height: 60vh; /* Responsive height */
+  }
+  
+  .about-section,
+  .projects-section,
+  .contact-section {
+    padding: 4rem 2rem;
+  }
+  
+  .about-section {
+    background-color: #f0f0f0; /* Slightly off-white for the about section */
+  }
+  
+  .projects-section {
+    background-color: #fff; /* White background for projects */
+  }
+  
+  .contact-section {
+    background-color: #f0f0f0; /* Consistent with the about section */
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .hero-image {
+      width: 80%;
+      height: auto;
+      margin-top: 2rem;
+    }
+  
+    .navbar {
+      display: none; /* Consider a mobile navigation solution */
+    }
+  }
+  
